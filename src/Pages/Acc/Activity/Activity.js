@@ -90,12 +90,12 @@ const Activity = ({ numero, solde, showSidebar }) => {
             return operation;
           } else {
             if (numero === debiteur) {
-              operation.Montant = -montant;
+              operation.NMontant = -montant;
               operation.type = "Virement envoyé";
               return operation;
             }
             if (numero === recepteur) {
-              operation.Montant = montant;
+              operation.NMontant = montant;
               operation.type = "Virement reçu";
               return operation;
             }
@@ -135,12 +135,12 @@ const Activity = ({ numero, solde, showSidebar }) => {
           <CartesianGrid stroke="#f5f5f5" />
           <Area
             type="monotone"
-            dataKey="Montant"
+            dataKey="NMontant"
             fill="#8884d8"
             stroke="#8884d8"
             strokeWidth={2}
           />
-          <Bar dataKey="Montant" barSize={20} fill="#413ea0" />
+          <Bar dataKey="NMontant" barSize={20} fill="#413ea0" />
           {/* <Line type="monotone" dataKey="newMontant" stroke="#ff7300" /> */}
         </ComposedChart>
 
@@ -178,14 +178,4 @@ const Activity = ({ numero, solde, showSidebar }) => {
     </div>
   );
 };
-const OperationsTooltipContent = ({ date, Montant, type }) => {
-  return (
-    <>
-      <p>Date : {date}</p>
-      <p>Type : {type}</p>
-      <p>Montant de L'operation : {Montant} MAD</p>
-    </>
-  );
-};
-const SoldesTooltipContent = () => {};
 export default Activity;
