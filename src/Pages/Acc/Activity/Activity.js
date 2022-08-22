@@ -86,7 +86,7 @@ const Activity = ({ numero, solde, showSidebar }) => {
         .map((operation) => {
           const { id, type, montant, date, debiteur, recepteur } = operation;
           if (type) {
-            operation.Montant = type === "DEPOSIT" ? montant : -montant;
+            operation.NMontant = type === "DEPOSIT" ? montant : -montant;
             return operation;
           } else {
             if (numero === debiteur) {
