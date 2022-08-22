@@ -22,7 +22,35 @@ const Loans = () => {
     console.log(loans);
   }, [loans]);
   const closeLoan = (id) => {
-    //
+    fetch(`http://banky01.herokuapp.com/loan/deleteLoan/${id}`, {
+      method: "DELETE",
+      headers: {
+        accept: "application/json",
+      },
+    }).then((response) => {
+      console.log(response);
+    });
+  };
+  const getStatusIcon = (status) => {
+    if (status === "Pending") {
+      return (
+        <MdPendingActions
+          style={{
+            color: "#3680C1",
+            fontSize: "24px",
+          }}
+        />
+      );
+    }
+    if (status === "Approved") {
+      return (
+        <FcApproval
+          style={{
+            fontSize: "24px",
+          }}
+        />
+      );
+    }
   };
   return (
     <div className={loan.loansContainer}>
@@ -97,20 +125,7 @@ const Loans = () => {
                   alignItems: "center",
                 }}
               >
-                {status === "Pending" ? (
-                  <MdPendingActions
-                    style={{
-                      color: "#3680C1",
-                      fontSize: "24px",
-                    }}
-                  />
-                ) : (
-                  <FcApproval
-                    style={{
-                      fontSize: "24px",
-                    }}
-                  />
-                )}
+                {getStatusIcon(status)}
                 <p
                   style={{
                     textAlign: "center",
