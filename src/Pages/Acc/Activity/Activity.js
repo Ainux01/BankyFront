@@ -23,14 +23,14 @@ const Activity = ({ numero, solde, showSidebar }) => {
 
   const getOperations = async (numero) => {
     const response = await fetch(
-      `http://banky01.herokuapp.com/compte/getOperations/${numero}`
+      `https://banky01.herokuapp.com/compte/getOperations/${numero}`
     );
     const data = await response.json();
     setOperations(data);
   };
   const getSoldes = async (numero) => {
     const response = await fetch(
-      `http://banky01.herokuapp.com/compte/getSoldes/${numero}`
+      `https://banky01.herokuapp.com/compte/getSoldes/${numero}`
     );
     const data = await response.json();
     const sortedData = data?.sort(
@@ -60,7 +60,7 @@ const Activity = ({ numero, solde, showSidebar }) => {
   };
   const getVirements = async () => {
     const response = await fetch(
-      `http://banky01.herokuapp.com/compte/getVirements`
+      `https://banky01.herokuapp.com/compte/getVirements`
     );
     const data = await response.json();
     setVirements(data);

@@ -9,7 +9,7 @@ const Loans = () => {
   const navigate = useNavigate();
   const getLoansByEmail = async (email) => {
     const resp = await fetch(
-      `http://banky01.herokuapp.com/loan/getLoans/${email}`
+      `https://banky01.herokuapp.com/loan/getLoans/${email}`
     );
     const data = await resp.json();
     setLoans(data);
@@ -22,7 +22,7 @@ const Loans = () => {
     console.log(loans);
   }, [loans]);
   const closeLoan = (id) => {
-    fetch(`http://banky01.herokuapp.com/loan/deleteLoan/${id}`, {
+    fetch(`https://banky01.herokuapp.com/loan/deleteLoan/${id}`, {
       method: "DELETE",
       headers: {
         accept: "application/json",

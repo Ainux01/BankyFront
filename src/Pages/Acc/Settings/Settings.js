@@ -12,7 +12,7 @@ const Settings = () => {
   const [client, setClient] = useState({});
   const getClientByEmail = async (email) => {
     const response = await fetch(
-      `http://banky01.herokuapp.com/client/getClientByEmail/${email}`
+      `https://banky01.herokuapp.com/client/getClientByEmail/${email}`
     );
     const data = await response.json();
     setClient(data);
@@ -30,7 +30,7 @@ const Settings = () => {
     e.preventDefault();
     try {
       fetch(
-        `http://banky01.herokuapp.com/client/updateClient/${client.email}`,
+        `https://banky01.herokuapp.com/client/updateClient/${client.email}`,
         {
           method: "PUT",
           headers: {

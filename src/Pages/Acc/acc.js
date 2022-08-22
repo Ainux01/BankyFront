@@ -26,7 +26,7 @@ const ConnectedAccueil = ({
   // console.log(new Date().toLocaleDateString("sv"));
   const getCompteByEmail = async (email) => {
     const response = await fetch(
-      `http://banky01.herokuapp.com/compte/getCompteByEmail/${email}`
+      `https://banky01.herokuapp.com/compte/getCompteByEmail/${email}`
     );
     const result = await response.json();
     setCompte(result);
@@ -34,7 +34,7 @@ const ConnectedAccueil = ({
 
   const getVirements = async (numero) => {
     const response = await fetch(
-      "http://banky01.herokuapp.com/compte/getVirements"
+      "https://banky01.herokuapp.com/compte/getVirements"
     );
     const data = await response.json();
     const newData = data.filter((virement) => {
