@@ -1,0 +1,115 @@
+.loansContainer {
+  min-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+}
+.table {
+  min-width: 700px;
+  margin: auto;
+  margin-bottom: 25px;
+  /* background-color: #4297cf; */
+}
+.header {
+  background-color: #4297cf;
+}
+.title {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Roboto", "Encode Sans Expanded";
+  font-weight: bold;
+}
+.info {
+  text-align: center;
+  font-size: 24px;
+  color: #39b385;
+  background-color: red;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.but {
+}
+.but:active {
+  transform: translateY(-2px);
+}
+
+/* LOAN */
+.loan {
+  margin: 20px auto;
+}
+.heading {
+  font-family: "Encode Sans Expanded";
+  background: linear-gradient(to right bottom, #39b385, #9be15d);
+  /* background: -webkit-linear-gradient(to right bottom, #09009f, #00ff95); */
+  background-clip: text;
+  color: transparent;
+  margin-top: 25px;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.heading_secondary {
+  font-family: "Roboto";
+  color: #de4a3a;
+  font-size: 20px;
+  /* margin: 35px 15px; */
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid gray;
+}
+
+.form {
+  background: #fff;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+.form input {
+  background: hsl(210, 36%, 96%);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+.form label {
+  font-size: 14px;
+}
+.form_control {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.btn1 {
+  color: #fff;
+  background: linear-gradient(to right bottom, #39b385, #9be15d);
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+
+  text-align: center;
+  transition: all 200ms linear;
+  font-size: 1.6rem;
+  border-style: outset;
+  box-shadow: 0px 2.5px 5px 7.5px rgba(#000, alpha);
+  overflow: hidden;
+  border: none;
+}
+.btn1:hover {
+  background: linear-gradient(to right bottom, #39b385, #9be15d);
+  color: transparent;
+  background-clip: text;
+  background-color: #fff;
+  border: 2px #39b385 solid;
+}
+.btn1:active {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px 15px rgba(#000, alpha);
+}

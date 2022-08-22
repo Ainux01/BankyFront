@@ -1,0 +1,61 @@
+.footer {
+  background: #3d8ac7;
+  color: #fff;
+  font-family: "Encode Sans Expanded";
+}
+
+.footer_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 500px;
+  margin: 0 auto;
+}
+.card {
+  margin-top: 55px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+.card h4 {
+  font-family: "Encode Sans Expanded";
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 0;
+  text-align: left;
+}
+.card ul li {
+  padding-bottom: 10px;
+  /* padding-left: 0; */
+  list-style: none;
+  font-family: "Encode Sans Expanded";
+  font-size: 18px;
+  font-weight: light;
+  transition: 200ms;
+  cursor: pointer;
+}
+.card ul li:hover {
+  color: #de4a3a;
+}
+.links {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px auto 0;
+}
+.parag {
+  font-size: 16px;
+  font-family: "Encode Sans Expanded";
+}
+.heading {
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: 4px;
+}

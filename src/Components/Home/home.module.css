@@ -1,0 +1,207 @@
+.container {
+  min-height: 450px;
+  /* width: 1000px; */
+  margin: auto;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.container section {
+  /* background: red; */
+  width: 450px;
+  height: 500px;
+  /* margin-right: 25px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading_primary {
+  color: #87b335;
+  font-size: 35px;
+  font-family: "Edu NSW ACT Foundation", "Roboto";
+  margin-top: 80px;
+}
+.heading_secondary {
+  font-family: "Roboto";
+  color: #de4a3a;
+  font-size: 35px;
+  margin-top: -10px;
+}
+.heading_tertiary {
+  color: #87b335;
+  font-size: 20px;
+  text-align: center;
+}
+.container section p {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Edu NSW ACT Foundation", "Roboto";
+  color: #3d8ac7;
+  line-height: 35px;
+}
+.btn1 {
+  padding: 9px 30px;
+  border-radius: 50px;
+  background: #de4a3a;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  /* line-height: 20px; */
+  /* display: inline-block; */
+  transition: 300ms;
+}
+.btn1:hover {
+  padding: 9px 35px;
+  color: #de4a3a;
+  background-color: #fff;
+  border: #de4a3a 2px solid;
+}
+.btn2 {
+  padding: 9px 30px;
+  border-radius: 50px;
+  background: #3d8ac7;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  /* line-height: 20px; */
+  /* display: inline-block; */
+  transition: 300ms;
+  font-size: 1.6rem;
+}
+.btn2:hover {
+  padding: 9px 35px;
+  color: #3d8ac7;
+  background-color: #fff;
+  border: #3d8ac7 2px solid;
+  font-weight: bold;
+}
+.aside1 {
+  height: 500px;
+  /* background: black; */
+  width: 450px;
+  background: url("../../images/finance.svg");
+  background-position: top;
+  background-size: 450px 500px;
+  /* background-blend-mode: darken; */
+}
+.aside2 {
+  height: 500px;
+  /* background: black; */
+  width: 450px;
+  background: url("../../images/transactions.svg");
+  background-position: top;
+  background-size: 450px 500px;
+  margin-right: 25px;
+  /* background-blend-mode: darken; */
+}
+
+/*Services*/
+.services {
+  background: #3d8ac7;
+  background-position: top;
+  background-size: cover;
+  min-height: 700px;
+}
+.services_cards {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 10px;
+  min-height: 300px;
+  max-width: 300px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  transition: 200ms;
+}
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 30px 40px rgba(#000, 0.2);
+}
+.card h3 {
+  font-family: "Roboto";
+  color: #de4a3a;
+  font-size: 20px;
+  /* margin: 35px 15px; */
+  text-align: center;
+  font-family: "Encode Sans Expanded";
+}
+.card p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Encode Sans Expanded";
+  margin: -10px 5px 0 5px;
+  margin-bottom: 5px;
+}
+.contact {
+  box-shadow: 7px 7px 5px #91ccfc;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../../images/gab.jpg");
+  background-position: top;
+  background-size: cover;
+  margin-top: -38px;
+}
+.heading_special {
+  font-family: "Roboto";
+
+  font-size: 45px;
+  letter-spacing: 5px;
+  position: relative;
+  color: #fff;
+  padding-top: 35px;
+}
+.heading_special::after {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background: #3d8ac7;
+  position: absolute;
+  top: 95px;
+  left: 490px;
+}
+.form {
+  margin-top: 75px;
+}
+.form_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: rbga(#fff, 0.5);
+  border: none;
+  border-bottom: 3px solid #de4a3a;
+  /* width: 350px;
+  height: 15px; */
+  display: block;
+  transition: all 0.3s;
+  margin-left: 25px;
+}
+.input:focus {
+  outline: none;
+}
+.label {
+  color: #de4a3a;
+  font-size: 50px;
+}

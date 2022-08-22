@@ -1,0 +1,91 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 100%;
+  background: #fff;
+  margin-left: -340px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  /* border-right: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s linear;
+}
+.showSidebar {
+  margin-left: 0;
+}
+.heading {
+  font-family: "Encode Sans Expanded";
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 13px;
+  letter-spacing: 2px;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  flex: 1;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10px;
+}
+.closeBtn {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 13px;
+  background-color: #fff;
+  border: none;
+  color: #fa5856;
+  opacity: 0.8;
+  border-radius: 25px;
+  text-align: center;
+}
+.closeBtn:hover {
+  opacity: 1;
+  background-color: #ccc;
+}
+
+.logo {
+  justify-self: center;
+  height: 55px;
+}
+
+.links li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.4rem 1.9rem;
+  color: hsl(209, 34%, 30%);
+  transition: all 0.3s linear;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.links a:hover {
+  /* background: hsl(210, 36%, 96%);
+  color: hsl(211, 39%, 23%); */
+  background: hsl(208, 68%, 85%);
+  color: hsl(212, 55%, 17%);
+}
+.active {
+  background: hsl(208, 68%, 85%);
+  color: hsl(212, 55%, 17%);
+}
+.links a svg {
+  font-size: 30px;
+  color: hsl(210, 22%, 49%);
+  margin-right: 1rem;
+  transition: all 0.3s linear;
+}
+.links a:hover svg {
+  color: hsl(209, 28%, 39%);
+}

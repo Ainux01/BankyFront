@@ -1,0 +1,14 @@
+.activity {
+  width: auto;
+  margin-top: 100px;
+  background: #fff;
+}
+.activity section {
+  margin: auto;
+  width: 100%;
+}
+.heading_secondary {
+  font-family: "Encode Sans Expanded";
+  font-size: 26px;
+  letter-spacing: 3px;
+}
