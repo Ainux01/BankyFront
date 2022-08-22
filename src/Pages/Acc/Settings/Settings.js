@@ -12,7 +12,7 @@ const Settings = () => {
   const [client, setClient] = useState({});
   const getClientByEmail = async (email) => {
     const response = await fetch(
-      `http://localhost:8080/client/getClientByEmail/${email}`
+      `http://banky01.herokuapp.com/client/getClientByEmail/${email}`
     );
     const data = await response.json();
     setClient(data);
@@ -29,15 +29,18 @@ const Settings = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     try {
-      fetch(`http://localhost:8080/client/updateClient/${client.email}`, {
-        method: "PUT",
-        headers: {
-          accept: "application.json",
-          "Content-type": "application/json",
-        },
-        // mode: "no-cors",
-        body: JSON.stringify(client),
-      }).then((response) => console.log(response));
+      fetch(
+        `http://banky01.herokuapp.com/client/updateClient/${client.email}`,
+        {
+          method: "PUT",
+          headers: {
+            accept: "application.json",
+            "Content-type": "application/json",
+          },
+          // mode: "no-cors",
+          body: JSON.stringify(client),
+        }
+      ).then((response) => console.log(response));
     } catch (error) {}
   };
   const changeHandler = (e) => {

@@ -26,14 +26,16 @@ const ConnectedAccueil = ({
   // console.log(new Date().toLocaleDateString("sv"));
   const getCompteByEmail = async (email) => {
     const response = await fetch(
-      `http://localhost:8080/compte/getCompteByEmail/${email}`
+      `http://banky01.herokuapp.com/compte/getCompteByEmail/${email}`
     );
     const result = await response.json();
     setCompte(result);
   };
 
   const getVirements = async (numero) => {
-    const response = await fetch("http://localhost:8080/compte/getVirements");
+    const response = await fetch(
+      "http://banky01.herokuapp.com/compte/getVirements"
+    );
     const data = await response.json();
     const newData = data.filter((virement) => {
       const { debiteur, recepteur } = virement;

@@ -11,7 +11,7 @@ const Loan = () => {
   console.log(amountParam);
   const getLoan = async (id) => {
     const response = await fetch(
-      `http://localhost:8080/loan/getLoanById/${id}`
+      `http://banky01.herokuapp.com/loan/getLoanById/${id}`
     );
     const data = await response.json();
     setLoani(data);
@@ -45,7 +45,7 @@ const Loan = () => {
   });
   const getClientByEmail = async (email) => {
     const response = await fetch(
-      `http://localhost:8080/client/getClientByEmail/${email}`
+      `http://banky01.herokuapp.com/client/getClientByEmail/${email}`
     );
     const data = await response.json();
     setClient(data);
@@ -119,7 +119,9 @@ const Loan = () => {
       comments: loanDetails.comments,
     };
     fetch(
-      `http://localhost:8080/loan/addLoan/${sessionStorage.getItem("email")}`,
+      `http://banky01.herokuapp.com/loan/addLoan/${sessionStorage.getItem(
+        "email"
+      )}`,
       {
         method: "POST",
         headers: {
@@ -133,7 +135,7 @@ const Loan = () => {
       if (response.status >= 200 && response.status <= 299) {
         console.log(loanDetails.phone);
         fetch(
-          `http://localhost:8080/client/updateClient/${sessionStorage.getItem(
+          `http://banky01.herokuapp.com/client/updateClient/${sessionStorage.getItem(
             "email"
           )}`,
           {

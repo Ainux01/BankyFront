@@ -8,7 +8,9 @@ const Loans = () => {
   const [loans, setLoans] = useState([]);
   const navigate = useNavigate();
   const getLoansByEmail = async (email) => {
-    const resp = await fetch(`http://localhost:8080/loan/getLoans/${email}`);
+    const resp = await fetch(
+      `http://banky01.herokuapp.com/loan/getLoans/${email}`
+    );
     const data = await resp.json();
     setLoans(data);
   };

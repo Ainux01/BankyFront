@@ -30,7 +30,7 @@ const Index = ({ numero, solde, getCompteByEmail }) => {
       } else {
         axios
           .post(
-            `http://localhost:8080/compte/${numero}/transfermoney/${transferDetails.transferTo}/${transferDetails.amount}`
+            `http://banky01.herokuapp.com/compte/${numero}/transfermoney/${transferDetails.transferTo}/${transferDetails.amount}`
           )
           .then((response) => {
             console.log(response);
