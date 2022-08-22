@@ -26,7 +26,7 @@ const Signup = () => {
         email: data.email,
         password: data.password,
       };
-      fetch("http://banky01.herokuapp.com/client/addClient", {
+      fetch("https://banky01.herokuapp.com/client/addClient", {
         method: "POST",
         headers: {
           accept: "application.json",
@@ -53,7 +53,7 @@ const Signup = () => {
   //   e.preventDefault();
   //   try {
   //     console.log(data);
-  //     fetch("http://banky01.herokuapp.com/admin/realms/Banky/users", {
+  //     fetch("https://banky01.herokuapp.com/admin/realms/Banky/users", {
   //       method: "POST",
   //       headers: {
   //         accept: "application.json",

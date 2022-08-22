@@ -27,7 +27,7 @@ const Login = () => {
   //   redirect: "follow",
   // };
 
-  // fetch("http://banky01.herokuapp.com/getSession", requestOptions)
+  // fetch("https://banky01.herokuapp.com/getSession", requestOptions)
   //   .then((response) => response.text())
   //   .then((result) => console.log(result))
   //   .catch((error) => console.log("error", error));
@@ -44,7 +44,7 @@ const Login = () => {
         "Basic " + btoa(`${data.email}:${data.password}`)
       );
       let response = await fetch(
-        `http://banky01.herokuapp.com/compte/getCurrentSession`,
+        `https://banky01.herokuapp.com/compte/getCurrentSession`,
         {
           method: "GET",
           // mode: "no-cors",
