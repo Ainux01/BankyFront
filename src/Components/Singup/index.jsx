@@ -103,7 +103,7 @@ const Signup = () => {
               className={styles.white_btn}
               onClick={() => navigate("/signin")}
             >
-              Sing in
+              Sign in
             </button>
           </Link>
         </div>
@@ -155,7 +155,7 @@ const Signup = () => {
             />
             {error && <div className={styles.error_msg}>{error}</div>}
             <button type="submit" className={styles.green_btn}>
-              Sing Up
+              Sign Up
             </button>
           </form>
         </div>
