@@ -7,14 +7,16 @@ const index = ({ showsignbtn }) => {
   return (
     <div className={navbar.navbar}>
       <div className={navbar.container}>
-        <Link to="/" className={navbar.logo_container}>
-          <div>
-            <img src={logo} alt="logo" className={navbar.logo_image} />
-          </div>
-          <h2>
-            <span className={navbar.blue}>B</span>anky
-          </h2>
-        </Link>
+        <div>
+          <Link to="/" className={navbar.logo_container}>
+            <div>
+              <img src={logo} alt="logo" className={navbar.logo_image} />
+            </div>
+            <h2>
+              <span className={navbar.blue}>B</span>anky
+            </h2>
+          </Link>
+        </div>
 
         <ul className={navbar.navmenu}>
           <Links to="home">

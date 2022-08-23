@@ -119,7 +119,6 @@ const Index = () => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{ width: "350px", height: "15px" }}
               />
             </div>
             <div className={home.form_group}>
@@ -133,7 +132,7 @@ const Index = () => {
                 placeholder="Enter the message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                cols="60"
+                cols="45"
                 rows="4"
               />
             </div>

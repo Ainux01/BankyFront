@@ -14,7 +14,7 @@
 }
 .card {
   margin-top: 55px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -58,4 +58,20 @@
   font-size: 22px;
   text-decoration: none;
   letter-spacing: 4px;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 100%;
+    margin: auto;
+  }
+  .footer_cards {
+    max-width: 80%;
+    margin-left: -30px;
+  }
+  .card h4 {
+    font-size: 12px;
+  }
+  .card ul li {
+    font-size: 10px;
+  }
 }
